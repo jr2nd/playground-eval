@@ -4,7 +4,7 @@ const equals = document.querySelector('#key_equals');
 const decimal = document.querySelector('#key_decimal');
 const backspace = document.querySelector('#key_backspace');
 const clear = document.querySelector('#key_clear');
-
+const operators = document.querySelectorAll('.operator')
 for (let i = 0; i < numbers.length; i++)
   numbers[i].addEventListener('click', function() {
     answer.innerHTML += this.innerHTML;
@@ -29,3 +29,14 @@ backspace.addEventListener('click', function() {
 clear.addEventListener('click', function() {
   answer.innerHTML = '';
 });
+for(let i = 0; i < operators.length; i++){
+  operators[i].addEventListener('click', function() {
+if(answer.innerHTML === '')return;
+if(isNaN(answer.innerHTML[answer.innerHTML.length - 1])){
+console.log('nan')
+}
+
+  console.log('help')
+answer.innerHTML += this.innerHTML
+  })
+}
