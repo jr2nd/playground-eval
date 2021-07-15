@@ -32,11 +32,8 @@ clear.addEventListener('click', function() {
 for(let i = 0; i < operators.length; i++){
   operators[i].addEventListener('click', function() {
 if(answer.innerHTML === '')return;
-if(isNaN(answer.innerHTML[answer.innerHTML.length - 1])){
-console.log('nan')
-}
-
-  console.log('help')
-answer.innerHTML += this.innerHTML
+if (isNaN(answer.innerHTML[answer.innerHTML.length - 1]))return
+  if(answer.innerHTML[answer.innerHTML.length - 1] != '.')
+  answer.innerHTML += this.innerHTML
   })
 }
