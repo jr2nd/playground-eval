@@ -74,10 +74,11 @@ body {
   grid-column: 4/5;
 }
 #key_decimal {
-
+grid-row: ;
+grid-column: ;
 }
 #key_backspace {
-  
+
 }
 #key_clear {
 
