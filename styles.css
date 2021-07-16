@@ -9,6 +9,11 @@ body {
   border: solid;
   border-width: thin;
 }
+#answer {
+  height: 1rem;
+  background-color: black;
+  color: white;
+}
 #key_add {
   grid-row: 1/2;
   grid-column: 1/2;
