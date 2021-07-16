@@ -8,7 +8,7 @@ const operators = document.querySelectorAll('.operator');
 for (let i = 0; i < numbers.length; i++)
   numbers[i].addEventListener('click', function() {
     answer.innerHTML += this.innerHTML;
-document.querySelector('#numin').value=this.innerHTML;
+document.querySelector('#number1').value=this.innerHTML;
   }); //numbers
 
 equals.addEventListener('click', function() {

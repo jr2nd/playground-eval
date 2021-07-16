@@ -1,6 +1,15 @@
 body {
   background: orange;
 }
+input {
+  background-color: black;
+  color: white;
+}
+#operator {
+width: 1rem;
+height: 1rem;
+background-color: red;
+}
 #container {
   display: grid;
   border: solid;
